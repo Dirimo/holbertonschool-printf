@@ -1,13 +1,14 @@
+#include "main.h"
 #include <limits.h>
-#include <stdio.h>
 #include <stdarg.h>
 #include <stddef.h>
-#include "main.h"
+#include <stdio.h>
+
 /**
- *print_int - prints integer
- *@d - @i
- *@args : argument to print
- * return: number of the characters printed
+ * print_int - Prints an integer
+ * @args: Argument list containing the integer to print
+ *
+ * Return: Number of characters printed
  */
 int print_int(va_list args)
 {
@@ -26,6 +27,7 @@ int print_int(va_list args)
 		last = -last;
 		i++;
 	}
+
 	if (num > 0)
 	{
 		while (num / 10 != 0)
@@ -33,6 +35,7 @@ int print_int(va_list args)
 			exp = exp * 10;
 			num = num / 10;
 		}
+
 		num = n;
 		while (exp > 0)
 		{
@@ -43,16 +46,16 @@ int print_int(va_list args)
 			i++;
 		}
 	}
-	_putchar(last + '0');
 
+	_putchar(last + '0');
 	return (i);
 }
-#include "main.h"
+
 /**
- * print_deci - prints decimal
- * @d - @i
- * @args : argument to print
- * return: number of the characters printed
+ * print_deci - Prints a decimal (integer)
+ * @args: Argument list containing the decimal to print
+ *
+ * Return: Number of characters printed
  */
 int print_deci(va_list args)
 {
@@ -71,6 +74,7 @@ int print_deci(va_list args)
 		last = -last;
 		i++;
 	}
+
 	if (num > 0)
 	{
 		while (num / 10 != 0)
@@ -78,6 +82,7 @@ int print_deci(va_list args)
 			exp = exp * 10;
 			num = num / 10;
 		}
+
 		num = n;
 		while (exp > 0)
 		{
@@ -88,7 +93,7 @@ int print_deci(va_list args)
 			i++;
 		}
 	}
-	_putchar(last + '0');
 
+	_putchar(last + '0');
 	return (i);
 }
