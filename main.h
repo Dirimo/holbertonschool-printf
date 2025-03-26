@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * struct format - Structure to map format specifiers to functions
