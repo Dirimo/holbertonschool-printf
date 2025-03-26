@@ -1,7 +1,14 @@
-#include <stdarg.h>
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdarg.h>
+
+/**
+ * struct format - Structure to map format specifiers to functions
+ *
+ * @id: The format specifier (e.g., "c", "s", "d")
+ * @f:  A pointer to the function that handles the specifier
+ */
 typedef struct format
 {
 	char *id;
@@ -10,12 +17,11 @@ typedef struct format
 
 int _putchar(char c);
 int print_char(va_list val);
-int _printf(const char *format, ...);
-int print_char(va_list val);
 int printf_string(va_list val);
 int _strlen(char *s);
 int print_20(void);
 int print_int(va_list args);
 int print_deci(va_list args);
+int _printf(const char *format, ...);
 
-#endif
+#endif /* MAIN_H */
