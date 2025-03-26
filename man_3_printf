@@ -1,0 +1,41 @@
+.TH _PRINTF 3 "Mars 2025" "Linux Programmers Manual"
+.SH NAME
+_printf \- Simplified formatted output conversion
+.SH SYNOPSIS
+.B #include "main.h"
+.PP
+.B int _printf(const char *format, ...);
+.SH DESCRIPTION
+The .B _printf
+function is a simplified custom implementation of the printf function. It takes a format string and a variable number of arguments.
+It handles the following conversion specifiers:
+.IP "%c" 4
+Prints a single character.
+.IP "%s" 4
+Prints a string of characters.
+.IP "%%" 4
+Prints the '%' character.
+.IP "%d" 4
+Prints a signed integer in base 10.
+.IP "%i" 4
+Prints a signed integer in base 10 (equivalent to %d).
+.PP
+It returns the number of characters printed (excluding the null byte used to end strings).
+.PP
+It writes output to stdout, the standard output stream.
+.PP
+This version of _printf does not handle advanced printf options, such as flags, field width, precision, and length modifiers.
+.SH EXAMPLES
+.PP
+.B _printf
+.RI ( "Hello, %s! You are %d years old.", "John", 30 );
+.PP
+.B _printf
+.RI ( "The '%' character can be printed with '%%'." );
+.PP
+.B _printf
+.RI ( "Your number is %i.", 12345 );
+.SH SEE ALSO
+printf(3)
+.SH AUTHORS
+Nomen Ratsimba, Dirimo Iriarte, Latifa El Gari
