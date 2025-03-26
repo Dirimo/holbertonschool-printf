@@ -9,6 +9,7 @@ typedef struct format
 } match;
 
 int _putchar(char c);
+int print_char(va_list val);
 int _printf(const char *format, ...);
 int printf_char(va_list attri);
 int print_string(va_list attri);
