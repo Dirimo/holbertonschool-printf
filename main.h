@@ -20,7 +20,7 @@ int _putchar(char c);
 int print_char(va_list val);
 int printf_string(va_list val);
 int _strlen(char *s);
-int print_20(void);
+int print_37(void);
 int print_int(va_list args);
 int print_deci(va_list args);
 int _printf(const char *format, ...);

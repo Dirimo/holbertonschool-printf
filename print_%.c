@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_20 - Prints the character with ASCII value 20 (non-printable)
+ * print_37 - Prints the character with ASCII value 37 (%)
  *
  * Return: 1 (number of characters printed)
  */
-int print_20(void)
+int print_37(void)
 {
-	_putchar(20);
+	_putchar(37);
 	return (1);
 }
