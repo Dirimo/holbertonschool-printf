@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	match m[] = {
 		{"%c", print_char},
 		{"%s", printf_string}, /* Corrected to printf_string */
-		{"%%", print_20},
+		{"%%", print_37},
 		{"%d", print_deci},
 		{"%i", print_int}
 	};
